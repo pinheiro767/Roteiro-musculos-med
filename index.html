@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlas de Miologia</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/style.css">
+<script src="libs/jspdf.min.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Atlas de Miologia</h1>
+<h3>Profª Drª Carmem Patrícia Barbosa</h3>
+</header>
+
+<section class="search">
+<input id="busca" placeholder="Digite o músculo..." oninput="buscarMusculo()">
+</section>
+
+<section id="resultados"></section>
+
+<section class="pdf">
+<button onclick="gerarPDF()">Gerar PDF do estudo</button>
+</section>
+
+<section class="modelo3d">
+<h2>Construir material 3D</h2>
+<p>Fotografe o modelo anatômico em 360° com 30–60 imagens.</p>
+<input type="file" id="fotos3d" multiple accept="image/*">
+<div id="preview3d"></div>
+</section>
+
+<footer>
+Responsável tecnológica — Profª Dra Cláudia Pinheiro
+</footer>
+
+<script src="js/musculos.js"></script>
+<script src="js/app.js"></script>
+<script src="js/camera.js"></script>
+<script src="js/pdf.js"></script>
+
+</body>
+</html>
